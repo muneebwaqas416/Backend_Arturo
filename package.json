@@ -1,0 +1,52 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cmu-pronouncing-dictionary": "^3.0.0",
+    "cmudict": "^1.0.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "force": "^0.0.3",
+    "google-auth-library": "^9.7.0",
+    "google-oauth2": "^0.1.0",
+    "google-translate-api": "^2.3.0",
+    "jsonwebtoken": "^9.0.1",
+    "memorystore": "^1.6.7",
+    "mongoose": "^7.6.0",
+    "natural": "^7.0.5",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "nodemailer": "^6.9.7",
+    "oauth": "^0.10.0",
+    "openai": "^4.13.0",
+    "phonetics": "^1.0.7",
+    "raw-body": "^2.5.2",
+    "stripe": "^13.9.0",
+    "syllable": "^5.0.1",
+    "syllables": "^1.0.0"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
